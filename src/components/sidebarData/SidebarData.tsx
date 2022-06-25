@@ -15,5 +15,11 @@ export const SidebarData = [
       path: '/contact',
       icon: <BsIcons.BsFillTelephoneFill />,
       cName: 'nav-text'
+    },
+    {
+      title: 'About us',
+      path: '/about',
+      icon: <IoIcons.IoMdInformationCircle />,
+      cName: 'nav-text'
     }
   ];
