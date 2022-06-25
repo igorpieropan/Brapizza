@@ -4,6 +4,8 @@ import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { SidebarData } from "../sidebarData/SidebarData";
 
+import "./sidebarStyles.css";
+
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false);
 
@@ -14,9 +16,10 @@ function Sidebar() {
                 <Link to="#" className="menu-bars">
                     <FaIcons.FaBars onClick={showSidebar} />
                 </Link>
+                <h1 className="pizzaTitle">Bra Pizza</h1>
             </div>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-                <ul className="nav-menu-items">
+                <ul className="nav-menu-items" onClick={showSidebar}>
                     <li className="navbar-toggles">
                         <Link to="#" className="menu-bars">
                             <AiIcons.AiOutlineClose />
