@@ -4,6 +4,7 @@ import "./App.css";
 import * as FaIcons from "react-icons/fa";
 import Sidebar from "./components/sidebar/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home/homePage";
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
             <Router>
                 <Sidebar />
                 <Routes>
-                    <Route path="/"/>
+                    <Route path="/" element={<HomePage />}/>
                 </Routes>
             </Router>
         </>
